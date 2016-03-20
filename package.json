@@ -1,0 +1,40 @@
+{
+  "name": "angular.mailcheck",
+  "version": "0.1.0",
+  "description": "Reduce user-misspelled email addresses in your angular forms",
+  "main": "angular-mailcheck.js",
+  "scripts": {
+    "test": "npm run lint && karma start --single-run",
+    "min": "uglifyjs angular-mailcheck.js --comments '/^!/' --compress --mangle -o angular-mailcheck.min.js",
+    "lint": "eslint '*.js' 'test/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tfoxy/angular.mailcheck.git"
+  },
+  "keywords": [
+    "angular",
+    "mailcheck",
+    "directive",
+    "email"
+  ],
+  "author": "Tomás Fox <tomas.c.fox@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tfoxy/angular.mailcheck/issues"
+  },
+  "homepage": "https://github.com/tfoxy/angular.mailcheck#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "2.4.0",
+    "karma": "0.13.22",
+    "karma-chai": "0.1.0",
+    "karma-chrome-launcher": "0.2.2",
+    "karma-mocha": "0.2.2",
+    "karma-phantomjs-launcher": "0.2.3",
+    "mocha": "2.4.5",
+    "phantomjs": "1.9.19",
+    "phantomjs-polyfill": "0.0.2",
+    "uglify-js": "2.6.2"
+  }
+}

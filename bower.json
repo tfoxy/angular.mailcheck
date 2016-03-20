@@ -1,0 +1,20 @@
+{
+  "name": "angular.mailcheck",
+  "main": "angular-mailcheck.js",
+  "homepage": "https://github.com/tfoxy/angular-mailcheck",
+  "dependencies": {
+    "angular": ">=1.2.0",
+    "mailcheck": ">=1.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.2.0"
+  },
+  "ignore": [
+    "**/*",
+    "!angular-mailcheck.js",
+    "!angular-mailcheck.min.js",
+    "!LICENSE"
+  ],
+  "author": "Tomás Fox <tomas.c.fox@gmail.com>",
+  "license": "MIT"
+}
