@@ -46,7 +46,11 @@ angular.module('myApp', ['tf.mailcheck', ...])
 
 ```html
 <div>
-  <input ng-model="vm.email" tf-mailcheck="vm.suggestion">
+  <input
+    type="email"
+    ng-model="vm.email"
+    tf-mailcheck="vm.suggestion"
+  />
   <div ng-if="vm.suggestion">
     Did you mean 
     <a href ng-click="vm.email = vm.suggestion.full">
@@ -54,10 +58,12 @@ angular.module('myApp', ['tf.mailcheck', ...])
   </div>
 </div>
 
+
 <!-- Pass options with tf-mailcheck-options -->
 <!-- Options: https://github.com/mailcheck/mailcheck#usage-without-jquery -->
 <div>
   <input
+    type="email"
     ng-model="vm.email2"
     tf-mailcheck="vm.suggestion2"
     tf-mailcheck-options="{secondLevelDomains: ['foobar']}"
